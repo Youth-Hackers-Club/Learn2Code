@@ -1,10 +1,13 @@
+<?php
+include 'include/config.php';
+?>
 <!DOCTYPE html>
 <html>
 	<head>
-		<link href="/css/base.css" rel="stylesheet">
+		<link href="<?php echo $GLOBALS['server_path']?>css/base.css" rel="stylesheet">
 		
-		<script type="text/javascript" src="js/sha512.js"></script>
-		<script type="text/javascript" src="js/forms.js"></script>
+		<script type="text/javascript" src="<?php echo $GLOBALS['server_path']?>js/sha512.js"></script>
+		<script type="text/javascript" src="<?php echo $GLOBALS['server_path']?>js/forms.js"></script>
 		<title>Login</title>
 	</head>
 
@@ -16,7 +19,7 @@
 				   echo '<div class="error">Error Logging In!</div>';
 				}
 				else{
-					echo '<div class="info">If you do not have an account <a href="/register.php">register</a>.</div>';
+					echo '<div class="info">If you do not have an account <a href="'.$GLOBALS['server_path'].'register.php">register</a>.</div>';
 				}
 			?>
 			

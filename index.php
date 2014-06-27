@@ -1,3 +1,4 @@
 <?php
-	header('Location: /main.php');
+	include 'include/functions.php';
+	redirect('main.php');
 ?>

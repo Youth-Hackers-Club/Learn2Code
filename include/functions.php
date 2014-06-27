@@ -1,7 +1,11 @@
 <?php
 
 include 'config.php';
-	
+
+	function redirect($page) {
+		header("Location:".$GLOBALS["server_path"].$page);
+	}
+
 	function sec_session_start() {
 		$session_name = 'sec_session_id'; // Set a custom session name
 		$secure = false; // Set to true if using https.

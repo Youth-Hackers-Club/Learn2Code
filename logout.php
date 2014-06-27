@@ -1,5 +1,5 @@
 <?php
-
+	include 'include/config.php';
 	include 'include/functions.php';
 	sec_session_start();
 	// Unset all session values
@@ -10,7 +10,6 @@
 	setcookie(session_name(), '', time() - 42000, $params["path"], $params["domain"], $params["secure"], $params["httponly"]);
 	// Destroy session
 	session_destroy();
-	
-	header('Location: main.php');
 
+	redirect('main.php')
 ?>

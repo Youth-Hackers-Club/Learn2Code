@@ -9,6 +9,8 @@
 	   $password = $_POST['p']; // The hashed password.
 	   if(login($email, $password, $DBH) == true) {
 	      // Login success
+		   $DBH;
+		   $server_path;
 	      echo 'Success: You have been logged in!';
 		  header('Location: /main.php');
 	   } else {

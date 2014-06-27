@@ -23,6 +23,6 @@
 	   // Execute the prepared query.
 	   $insert_stmt->execute();
 	}
-	
-	header('Location: /register.php?success=1');
+
+	redirect('register.php?success=1');
 ?>
