@@ -14,4 +14,4 @@ Info coming soon
 ## Coding standards
 Please use the following code standards
 *   Use tabs not spaces
-*   Write HTML instead of echoing it
+*   Write HTML instead of echoing it unless otherwise
