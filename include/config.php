@@ -8,6 +8,7 @@
 	//GLOBAL VARIABLES
 	$GLOBALS['server_path'] = '/Learn2Code/';
 	//CUSTOM VARIABLES (Change for each installation)
+	$GLOBALS['server_pages_URI'] = 'http://localhost/Phpstorm/Learn2Code/';
 
 	
 	try{

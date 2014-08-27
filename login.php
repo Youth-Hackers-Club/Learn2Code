@@ -19,7 +19,7 @@ include 'include/config.php';
 				   echo '<div class="error">Error Logging In!</div>';
 				}
 				else{
-					echo '<div class="info">If you do not have an account <a href="'.$GLOBALS['server_path'].'register.php">register</a>.</div>';
+					echo '<div class="info">If you do not have an account <a href="index.php?p=register">register</a>.</div>';
 				}
 			?>
 			
