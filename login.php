@@ -1,17 +1,12 @@
 <?php
 include 'include/config.php';
 ?>
-<!DOCTYPE html>
-<html>
-	<head>
-		<link href="<?php //echo $GLOBALS['server_path']?>css/base.css" rel="stylesheet">
-		
-		<script type="text/javascript" src="<?php //echo $GLOBALS['server_path']?>js/sha512.js"></script>
-		<script type="text/javascript" src="<?php //echo $GLOBALS['server_path']?>js/forms.js"></script>
-		<title>Login</title>
-	</head>
+    <title>Login</title>
+    <link href="<?php echo $GLOBALS['server_path']?>css/base.css" rel="stylesheet">
+	<script type="text/javascript" src="<?php echo $GLOBALS['server_path']?>js/sha512.js"></script>
+	<script type="text/javascript" src="<?php echo $GLOBALS['server_path']?>js/forms.js"></script>
 
-	<body>
+
 		<div class="login-box">
 			<h1>Login</h1>
 			<?php
@@ -30,9 +25,7 @@ include 'include/config.php';
 			</form>
 			<br />
 		</div>
-		
-	</body>
-</html>
+
 
 
 

@@ -26,7 +26,7 @@
 <?php
 	 
 	} else {
-		redirect('login.php');
+		redirect('index.php?p=login');
 	}
 	
 ?>

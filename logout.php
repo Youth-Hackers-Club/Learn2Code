@@ -11,5 +11,5 @@
 	// Destroy session
 	session_destroy();
 
-	redirect('main.php')
+	redirect('index.php')
 ?>

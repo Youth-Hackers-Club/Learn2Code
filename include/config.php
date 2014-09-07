@@ -6,9 +6,9 @@
 	$db_database = "walrus";
 	
 	//GLOBAL VARIABLES
-	$GLOBALS['server_path'] = '/Learn2Code/';
+	$GLOBALS['server_path'] = '/';
 	//CUSTOM VARIABLES (Change for each installation)
-	$GLOBALS['server_pages_URI'] = 'http://localhost/Phpstorm/Learn2Code/';
+	$GLOBALS['server_pages_URI'] = 'http://localhost/';
 
 	
 	try{
@@ -17,4 +17,3 @@
 	catch(PDOException $e) {
 		//echo $e->getMessage();
 	}
-?>

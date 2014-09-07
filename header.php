@@ -4,7 +4,11 @@
 ?>
 	
 	<div class="headerbar">
-		
+
+        <link rel="stylesheet" href="<?php echo $GLOBALS['server_path']?>js/jq/css/custom-theme-dark-v1/jquery-ui-1.10.4.custom.css" />
+        <script src="<?php echo $GLOBALS['server_path']?>js/jq/js/jquery-1.10.2.js"></script>
+        <script src="<?php echo $GLOBALS['server_path']?>js/jq/js/jquery-ui-1.10.4.custom.min.js"></script>
+
 		<div class="menubar">
 			<ul id="menu">
 			  <li><a href="#">Item 1</a></li>
@@ -28,7 +32,7 @@
 			<script>
 				$( "button" ).button();
 				$( 'button' ).click(function() {
-				   window.location = "/logout.php";
+				   window.location = "index.php?p=logout";
 				});
 				$( "#menu" ).menu();
 			</script>
