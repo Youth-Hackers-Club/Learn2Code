@@ -33,7 +33,7 @@ for ($i = 0; $i < count(array_keys($_GET)); $i++) {
                 <?php include "menu.php";?>
             </div>
             <div id="subPage">
-                <?php include $page.".php?".$getString;?>
+                <?php include $page.'.php';?>
             </div>
 		</div>
 

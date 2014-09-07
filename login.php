@@ -1,5 +1,5 @@
 <?php
-include 'include/config.php';
+    include 'include/config.php';
 ?>
     <title>Login</title>
     <link href="css/base.css" rel="stylesheet">
