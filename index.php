@@ -8,6 +8,15 @@ if (isset($_POST['p'])) {
 } else {
 	$page = 'main';
 }
+
+$getString = '';
+
+for ($i = 0; $i < count(array_keys($_GET)); $i++) {
+    if ($i != 0) {
+        $getString .= '&';
+    }
+    $getString .= array_keys($_GET)[$i].'='.$_GET[array_keys($_GET)[$i]];
+}
 ?>
 
 <html>
@@ -24,7 +33,7 @@ if (isset($_POST['p'])) {
                 <?php include "menu.php";?>
             </div>
             <div id="subPage">
-                <?php include $page.".php";?>
+                <?php include $page.".php?".$getString;?>
             </div>
 		</div>
 
