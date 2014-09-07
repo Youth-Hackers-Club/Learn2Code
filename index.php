@@ -13,8 +13,17 @@ if (isset($_POST['p'])) {
 	$page = 'main';
 }
 
+$getString = '';
+
+for ($i = 0; $i < count(array_keys($_GET)); $i++) {
+	if ($i != 0) {
+		$getString .= '&';
+	}
+	$getString .= array_keys($_GET)[$i].'='.$_GET[array_keys($_GET)[$i]];
+}
+
 $pagePath = $GLOBALS['server_pages_URI'].$page.'.php';
-$pageHTML = file_get_contents($pagePath);
+$pageHTML = file_get_contents($pagePath.'?'.$getString);
 
 $menuPath = $GLOBALS['server_pages_URI'].'menu'.'.php';
 $menuHTML = file_get_contents($menuPath);
@@ -32,5 +41,4 @@ $menuHTML = file_get_contents($menuPath);
 			<?php echo $pageHTML;?>
 		</div>
 	</body>
-	<?php //echo $pagePath;?>
 </html>
