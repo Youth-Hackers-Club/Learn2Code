@@ -4,10 +4,10 @@ include 'include/config.php';
 <!DOCTYPE html>
 <html>
 	<head>
-		<link href="<?php echo $GLOBALS['server_path']?>css/base.css" rel="stylesheet">
+		<link href="<?php //echo $GLOBALS['server_path']?>css/base.css" rel="stylesheet">
 		
-		<script type="text/javascript" src="<?php echo $GLOBALS['server_path']?>js/sha512.js"></script>
-		<script type="text/javascript" src="<?php echo $GLOBALS['server_path']?>js/forms.js"></script>
+		<script type="text/javascript" src="<?php //echo $GLOBALS['server_path']?>js/sha512.js"></script>
+		<script type="text/javascript" src="<?php //echo $GLOBALS['server_path']?>js/forms.js"></script>
 		<title>Register</title>
 		
 	</head>

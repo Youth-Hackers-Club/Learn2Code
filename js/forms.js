@@ -24,7 +24,7 @@ function checkfields(form) {
    		formhash(form, form.password);
    	}
    	else{
-   		window.location = "/register.php?short=1";
+   		window.location = "index.php?p=register&short=1";
    	}
    	
 }
